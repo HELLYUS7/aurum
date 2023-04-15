@@ -48,7 +48,7 @@ a {
 }
 
 body {
-    background-color: #060606;
+    background-color: #101010;
 }
 
 .header {
@@ -113,7 +113,7 @@ body {
     padding: 80px;
     flex-wrap: wrap;
     color: white;
-    background-color: #060606;
+    background-color: #101010;
     height: min-content;
     /*height: 450px;*/
     background-image: url('../images/blob-scene-haikei\ \(1\).svg');
@@ -190,7 +190,7 @@ body {
     color: white;
     gap: 27px;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(6,6,6,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, #101010 100%);
 }
 
 .products h1 {
