@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="images/AURUM.ico">
     <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="js/showElements.js"></script>
     <title>AURUM</title>
 </head>
 <body>
@@ -24,10 +27,34 @@
         </nav>
     </header>
     <section class="apresentation box-flex-row">
-        <h1>Fazendo sempre o<br> melhor por você!</h1>
-        <img src="images/undraw_learning_sketching_nd4f.svg">
+        <h1 class="hidden">Fazendo sempre o<br> melhor para você e<br> sua empresa!</h1>
+        <img class="hidden" src="images/undraw_learning_sketching_nd4f.svg">
     </section>
-    <section class="secondary-apresentation">
+    <section class="secondary-apresentation box-flex-column">
+        <h1>Quem somos?</h1>
+        <div class="container-qs box-flex-row">
+            <div class="container-qs-section box-flex-column hidden">
+                <p>
+                    Somos uma empresa que busca soluções tecnológicas e inovadoras para sua empresa
+                </p>
+                <ion-icon name="podium-outline"></ion-icon>
+            </div>
+            <div class="container-qs-section box-flex-column hidden">
+                <p>
+                    Estamos preparados para te oferecer soluções sólidas e eficiêntes, com alto desempenho
+                </p>
+                <ion-icon name="flash-outline"></ion-icon>
+            </div>
+            <div class="container-qs-section box-flex-column hidden">
+                <p>
+                    Queremos colocar seu empreendimento em um patamar nunca visto antes, agora mesmo
+                </p>
+                <ion-icon name="trophy-outline"></ion-icon>
+            </div>
+        </div>
+    </section>
+    <section class="products box-flex-column">
+
     </section>
 </body>
 </html>
