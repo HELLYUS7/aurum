@@ -19,14 +19,15 @@
         </div>
         <nav>
             <ul class="box-flex-row">
-                <li>Home</li>
-                <li>Produtos</li>
-                <li>Social</li>
+                <li><a href="#apresentation">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#social">Social</a></li>
                 <li id="contato">Contate-nos</li>
             </ul>
+            <ion-icon id="bt-menu" name="menu-outline"></ion-icon>
         </nav>
     </header>
-    <section class="apresentation box-flex-row">
+    <section id="apresentation" class="apresentation box-flex-row">
         <h1 class="hidden">Fazendo sempre o<br> melhor para você e<br> sua empresa!</h1>
         <img class="hidden" src="images/undraw_learning_sketching_nd4f.svg">
     </section>
@@ -53,8 +54,42 @@
             </div>
         </div>
     </section>
-    <section class="products box-flex-column">
-
+    <section id="produtos" class="products box-flex-column">
+        <h1>Produtos</h1>
+        <div class="box-flex-row product">
+            <div class="box-flex-column description hidden">
+                <h2>AURUM Manager</h2>
+                <p>O AURUM Manager é um sistema de gestão de estoque com interface intuitiva, recursos de controle de entradas e saídas de produtos, monitoramento de estoque em tempo real e automação de pedidos de reposição. Com relatórios precisos, ajuda a ter uma visão clara do desempenho do estoque e a tomar decisões estratégicas. Experimente agora!</p>
+                <ul>
+                    <li>Automatização de pedidos de reposição</li>
+                    <li>Monitoramento em tempo real dos níveis de estoque</li>
+                    <li>Relatórios precisos para visão clara do estoque</li>
+                </ul>
+                <button class="bt-start-product hidden">Experimentar agora!</button>
+            </div>
+            <img src="images/AURUM-MANAGER.svg" class="hidden">
+        </div>
     </section>
+    <section id="social" class="social box-flex-column">
+        <h1>Social</h1>
+        <div class="box-flex-row redes">
+            <div class="rede hidden">
+                <h2>Aurum Brasil</h2>
+                <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="rede hidden">
+                <h2>AurumBr</h2>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+            <div class="rede hidden">
+                <h2>@aurumbr</h2>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </div>
+    </section>
+    <footer class="box-flex-column footer">
+        <a class="bt-back-top box-flex-column" href="#apresentation">Voltar</a>
+        <p>Copyright © 2023 <span>hellyus7.github.io</span> Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
