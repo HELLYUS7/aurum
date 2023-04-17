@@ -1,3 +1,21 @@
+html::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #FFD427;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +66,7 @@ a {
 }
 
 body {
-    background-color: #101010;
+    background-color: black;
 }
 
 .header {
@@ -131,6 +149,19 @@ body {
 
 .apresentation img {
     width: 380px;
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .secondary-apresentation {
