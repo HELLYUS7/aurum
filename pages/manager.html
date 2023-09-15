@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/manager.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="../js/manager/script.js"></script>
+    <title>AURUM Manager</title>
+</head>
+<body>
+    <header class="box-flex-row header">
+        <div class="box-flex-row" id="container-logo">
+            <img id="logo-image" src="../images/AURUM.svg">
+            <img id="logo-image" src="../images/AURUM-NAME.svg">
+        </div>
+        <nav>
+            <ul class="box-flex-row">
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Controle</a></li>
+                <li><a href="">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="box-flex-row main">
+        <section class="box-flex-column products-info container">
+            <div class="box-flex-row adicionar-estoque">
+                <span>Adicionar novo estoque</span>
+                <button class="btn-add-product">Adicionar</button>
+            </div>
+            <span class="estoques-title">Estoques Ativos</span>
+            <div class="box-flex-column estoques-ativos">
+                <div class="estoques-listtile box-flex-row btn-listtile">
+                    <span class="desc">Tijolos Bahianos</span>
+                    <span class="valor-total">R$ 32.000,00</span>
+                    <span class="quantidade-total">332 Uni.</span>
+                    <ion-icon name="server-outline"></ion-icon>
+                </div>
+                <div class="estoques-listtile box-flex-row btn-listtile">
+                    <span class="desc">Tijolos Bahianos</span>
+                    <span class="valor-total">R$ 32.000,00</span>
+                    <span class="quantidade-total">332 Uni.</span>
+                    <ion-icon name="server-outline"></ion-icon>
+                </div>
+                <div class="estoques-listtile box-flex-row btn-listtile">
+                    <span class="desc">Tijolos Bahianos</span>
+                    <span class="valor-total">R$ 32.000,00</span>
+                    <span class="quantidade-total">332 Uni.</span>
+                    <ion-icon name="server-outline"></ion-icon>
+                </div>
+                <div class="estoques-listtile box-flex-row btn-listtile">
+                    <span class="desc">Tijolos Bahianos</span>
+                    <span class="valor-total">R$ 32.000,00</span>
+                    <span class="quantidade-total">332 Uni.</span>
+                    <ion-icon name="server-outline"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section class="box-flex-column estoque-info container">
+            <div class="quantidade-controller box-flex-column">
+                <span class="product-name" id="nomeProduto">Tijolos Bahianos</span>
+                <div class="box-flex-row controller-vendas">
+                    <input type="number" placeholder="Uni:" id="input-number"/>
+                    <button class="button btn-red" id="venderProduto">Vendido(s)</button>
+                    <button class="button btn-green" id="reporProduto">Reposto</button>
+                </div>
+            </div>
+            <div class="info-controller box-flex-column">
+                <span class="span name">
+                    Nome: <input type="text" id="editarNomeProduto" class="input-info"/>
+                </span>
+                <span class="span valor-uni">
+                    Valor por unidade: R$ <input type="number" step="0.01" id="editarValorProduto"  class="input-info"/>
+                </span>
+                <span class="span estoque-qtn" id="quantidadeProduto">
+                    Quantidade em estoque: 332 Uni
+                </span>
+                <span class="span updated">
+                    Atualizado em 23/04/2023
+                </span>
+                <button class="button" id="alterarInformacoes">Alterar informações</button>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>

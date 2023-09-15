@@ -1,0 +1,319 @@
+html::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #FFD427;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
+:root {
+    --main-aurum-color: #FFD427;
+    --repo-color: #c52f2f;
+    --venda-color: #16c48d;
+    --main-background-color: black;
+    --secondary-background-color: #0a0a0a;
+    --tertiary-background-color: #202020;
+    --quarto-background-color: black;
+    --main-text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 0.1s;
+}
+
+.show {
+    opacity: 1;
+    animation: showElement 1s forwards;
+    transition: all 0.3s;
+}
+
+@keyframes showElement {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.box-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--main-background-color);
+}
+
+.header {
+    top: 0;
+    position: sticky;
+    color: white;
+    background-color: black;
+    height: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+    z-index: 10;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.header nav ul {
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.header nav ul li {
+    cursor: pointer;
+    list-style: none;
+}
+
+.header nav ul li:hover {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 3px solid var(--main-text-color);
+}
+
+#container-logo {
+    gap: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-logo #logo-image {
+    width: 120px;
+}
+
+.main {
+    padding: 10px;
+    gap: 10px;
+}
+
+.container {
+    border-radius: 10px;
+}
+
+.products-info {
+    justify-content: start;
+    background-color: var(--secondary-background-color);
+    flex: 2;
+    height: 700px;
+}
+
+.estoque-info{
+    gap: 5px;
+    justify-content: start;
+    padding: 5px;
+    background-color: var(--tertiary-background-color);
+    flex: 1;
+    height: 700px;
+}
+
+.adicionar-estoque {
+    background-color: var(--tertiary-background-color);
+}
+.adicionar-estoque {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--main-text-color);
+}
+.adicionar-estoque button{
+    font-size: 15px;
+    width: 100px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFD427;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-background-color);
+    padding: 12px;
+}
+
+.estoques-ativos {
+    color: var(--main-text-color);
+    width: 100%;
+    padding: 3px;
+}
+
+.estoques-title {
+    margin-top: 5px;
+    margin-bottom: 6px;
+    color: var(--main-text-color);
+    text-align: center;
+    width: 100%;
+}
+
+.estoques-listtile {
+    cursor: pointer;
+    color: var(--main-text-color);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--tertiary-background-color);
+    width: 100%;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.estoques-listtile .remover-produto {
+    font-size: 21px;
+    color: rgb(255, 33, 33);
+}
+
+.estoques-listtile .valor-total {
+    color: var(--main-aurum-color);
+}
+
+.estoques-ativos .btn-listtile:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-background-color);
+    padding: 12px;
+}
+
+.estoques-ativos .btn-listtile:hover ion-icon {
+    color: var(--main-background-color);
+}
+
+.estoques-listtile ion-icon {
+    color: var(--main-aurum-color);
+}
+
+.quantidade-controller {
+    justify-content: start;
+    text-align: center;
+    gap: 10px;
+    flex: 1;
+    width: 100%;
+    background-color: var(--secondary-background-color);
+    color: var(--main-text-color);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.quantidade-controller .controller-vendas {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.quantidade-controller .controller-vendas input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    caret-color: var(--main-aurum-color);
+    color: var(--main-text-color);
+    font-size: 20px;
+    max-width: 80px;
+}
+
+.quantidade-controller .controller-vendas .button{
+    flex: 1;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--main-aurum-color);
+}
+
+.quantidade-controller .controller-vendas .button:hover {
+    cursor: pointer;
+    background-color: var(--main-text-color);
+    color: var(--main-background-color);
+}
+
+.quantidade-controller .controller-vendas .btn-red {
+    background-color: var(--repo-color);
+}
+
+.quantidade-controller .controller-vendas .btn-green {
+    background-color: var(--venda-color);
+}
+
+
+.info-controller {
+    background-color: var(--quarto-background-color);
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    flex: 1;
+    gap: 20px;
+    color: var(--main-text-color);
+    text-align: start;
+    justify-content: start;
+}
+
+.info-controller .span {
+    width: 100%;
+}
+
+.info-controller .button {
+    width: 100%;
+    background-color: var(--main-aurum-color);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info-controller .button:hover {
+    cursor: pointer;
+    background-color: var(--main-text-color);
+    color: var(--main-background-color);
+}
+
+.input-info {
+    border: none;
+    outline: none;
+    background-color: var(--tertiary-background-color);
+    color: var(--main-text-color);
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px;
+    width: 100%;
+}
