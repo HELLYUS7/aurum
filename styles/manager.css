@@ -134,7 +134,7 @@ body {
     justify-content: start;
     background-color: var(--secondary-background-color);
     flex: 2;
-    height: 700px;
+    height: 920px;
 }
 
 .estoque-info{
@@ -143,7 +143,7 @@ body {
     padding: 5px;
     background-color: var(--tertiary-background-color);
     flex: 1;
-    height: 700px;
+    height: min-content;
 }
 
 .adicionar-estoque {
@@ -277,7 +277,7 @@ body {
 
 
 .info-controller {
-    background-color: var(--quarto-background-color);
+    background-color: var(--secondary-background-color);
     border-radius: 10px;
     width: 100%;
     font-size: 20px;
